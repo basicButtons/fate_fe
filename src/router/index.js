@@ -6,8 +6,7 @@ function IndexRouter(){
         <Routes>
             {
                 RouterList.map((item,index)=>{
-                    console.log(item)
-                    return <Route path={item.path} component={item.component} key = {index}/>
+                    return <Route path={item.path} element={item.component} key = {index}/>
                 })
             }
         </Routes>
